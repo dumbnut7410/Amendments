@@ -8,20 +8,20 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Eleventh Amendment"
+        android:text="Twelve Amendment"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="This amendment gives states immune to non-citizens lawsuit." />
+        android:text="This amendment fixed the election procedures!" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Can the Hoosier sue Arizona?" />
+        android:text="Fix these procedures!" />
 
     <EditText
         android:id="@+id/editText1"
