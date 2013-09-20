@@ -6,10 +6,12 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends Activity {
 	int amendmentNumber;
-	
+	EditText firstBox;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -22,7 +24,14 @@ public class MainActivity extends Activity {
 			setContentView(R.layout.first);
 			break;
 		case 2:
-			setContentView(R.layout.second);
+			firstBox = (EditText) findViewById(R.id.firstText);
+			
+			if (firstBox.getText().toString().length() < 1){
+				firstBox.setText("I am sorry, you have this amendment confused with the fifth, please try again");
+			} else{
+				setContentView(R.layout.second);	
+			}
+			
 			break;
 		case 3:
 			setContentView(R.layout.third);
@@ -34,7 +43,15 @@ public class MainActivity extends Activity {
 			setContentView(R.layout.fifth);
 			break;
 		case 6:
-			setContentView(R.layout.sixth);
+			firstBox = (EditText) findViewById(R.id.editText1);
+			if (firstBox.getText().toString().length() > 0){
+				firstBox.setText("I am sorry, you have this amendment confused with the first, please try again");
+				firstBox = (EditText) findViewById(R.id.editText1);
+				amendmentNumber--;
+			} else{
+				setContentView(R.layout.sixth);	
+			}
+			
 			break;
 		case 7:
 			setContentView(R.layout.seventh);

@@ -21,24 +21,25 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Billy the cop wants to go through your things, please exercise this right below. (Remember, just because you have the right to be disrespectful does not mean that it is a good idea)" />
+        android:text="Billy the cop wants to go through your things, please exercise this right below. " />
 
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:ems="10"
-        android:inputType="textMultiLine" >
+        android:text="I have nothing to hide" />
 
-        <requestFocus />
-    </EditText>
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&lt;call him a flatfoot>" />
 
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Submit" />
+        android:text="Do you have a warrent?" />
 
 </LinearLayout>
